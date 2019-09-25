@@ -2,19 +2,29 @@ package com.example.sqllightapp.Model;
 
 public class ToDoModel {
 
+    private int id;
+    private String toDoDate = "";
     private String cardTitle = "";
     private String cardDescription = "";
     private String cardMail = "";
-    private int id;
 
     public ToDoModel() {
     }
 
-    public ToDoModel(int id, String cardTitle, String cardDescription, String cardMail) {
+    public ToDoModel(int id, String toDoDate, String cardTitle, String cardDescription, String cardMail) {
         this.cardTitle = cardTitle;
         this.cardDescription = cardDescription;
         this.cardMail = cardMail;
+        this.toDoDate = toDoDate;
         this.id = id;
+    }
+
+    public String getToDoDate() {
+        return toDoDate;
+    }
+
+    public void setToDoDate(String toDoDate) {
+        this.toDoDate = toDoDate;
     }
 
     public long getId() {

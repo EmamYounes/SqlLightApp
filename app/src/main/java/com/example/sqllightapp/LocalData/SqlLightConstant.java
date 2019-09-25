@@ -7,7 +7,8 @@ public class SqlLightConstant {
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_MAIL = "mail_id";
     public static final String COLUMN_TITLE = "title";
-    public static final String COLUMN_DESCRIPTION = "column_description";
+    public static final String COLUMN_DESCRIPTION = "description";
+    public static final String COLUMN_TODO_DATE = "todo_date";
 
 
     private static String createTableWord = "CREATE TABLE ";
@@ -20,6 +21,7 @@ public class SqlLightConstant {
                     + COLUMN_ID + integerWord + primaryKey + autoIncrement + ","
                     + COLUMN_MAIL + textWord + ","
                     + COLUMN_TITLE + textWord + ","
+                    + COLUMN_TODO_DATE + textWord + ","
                     + COLUMN_DESCRIPTION + textWord
                     + ")";
 
